@@ -1,0 +1,54 @@
+/* Apply styles to the body for full-page centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Center content within the wrapper div */
+.centered-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff; /* Optional: Add a white background box */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Style images */
+.centered-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Style the embedded video (iframe) */
+.centered-content iframe {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Style lists */
+.centered-content ol, 
+.centered-content ul {
+  text-align: left; /* Keep list items aligned left for readability */
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* List item styling */
+.centered-content li {
+  margin-bottom: 10px;
+}
+
+.newww {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #b41b1b; /* Medium-dark gray */
+}

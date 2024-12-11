@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Scratch Web Page</title>
+    <link rel="stylesheet" href="css/scratch.css"
+    
+
+    
+</head>
+
+<body class="homebg">
+    <div class="navbar">
+        <a  href="index.html">Professional Looking Site</a>
+        <a  href="scratch.html">From Scratch Page</a>
+   </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mood Tracker</title>
+      <style>
+        /* General Styling */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f9;
+          color: #333;
+          text-align: center;
+        }
+    
+        .container {
+          max-width: 600px;
+          margin: 50px auto;
+          padding: 20px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+          color: #4caf50;
+        }
+    
+        .mood-buttons {
+          margin: 20px 0;
+        }
+    
+        button {
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          margin: 5px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1em;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+    
+        .log {
+          margin-top: 20px;
+        }
+    
+        .log-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          margin: 10px 0;
+          background-color: #f4f4f9;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .log-item span {
+          font-weight: bold;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Mood Tracker</h1>
+        <p>Select your mood for the day:</p>
+        <div class="mood-buttons">
+          <button onclick="logMood('😊 Happy')">😊 Happy</button>
+          <button onclick="logMood('😐 Neutral')">😐 Neutral</button>
+          <button onclick="logMood('😢 Sad')">😢 Sad</button>
+          <button onclick="logMood('😡 Angry')">😡 Angry</button>
+        </div>
+        <h2>Today's Log</h2>
+        <div id="moodLog" class="log"></div>
+      </div>
+    
+      <script>
+        // Log the user's mood
+        function logMood(mood) {
+          const logContainer = document.getElementById('moodLog');
+    
+          // Get the current date and time
+          const now = new Date();
+          const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+          const date = now.toLocaleDateString();
+    
+          // Create a new log entry
+          const logEntry = document.createElement('div');
+          logEntry.classList.add('log-item');
+          logEntry.innerHTML = `<span>${mood}</span> <span>${date} ${time}</span>`;
+    
+          // Add the log entry to the log container
+          logContainer.prepend(logEntry);
+        }
+      </script>
+    </body>
+    </html>
+    
+</body>
+</html>

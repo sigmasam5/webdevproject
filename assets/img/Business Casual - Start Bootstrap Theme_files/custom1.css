@@ -1,0 +1,107 @@
+body, html {
+    height: 100%; /* Ensures the body and HTML take the full height of the viewport */
+    margin: 0; /* Removes default margin for body */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-box {
+    background-color: #ffe8d6; /* Light peach color */
+    padding: 20px; /* Space inside the box */
+    margin: auto; /* Centers the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    text-align: left; /* Aligns text to the left */
+    font-family: 'Arial', sans-serif; /* Font styling */
+    flex-grow: 1; /* Makes the box grow to fill the remaining vertical space */
+    width: 100%; /* Ensures it extends horizontally */
+    max-width: 1200px; /* Limits the width for readability */
+  }
+  
+  .content-box h2, .content-box h3 {
+    margin-top: 0; /* Removes extra spacing above headings */
+  }
+
+  .resume-sections {
+    display: flex;
+    justify-content: space-around; /* Spread the sections horizontally */
+    align-items: flex-start;
+    background-color: #ffe8d6; /* Light peach color to match the theme */
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 1200px; /* Center and limit the width */
+  }
+  
+  .resume-section {
+    width: 30%; /* Each section takes 30% of the horizontal space */
+    text-align: center;
+  }
+  
+  .resume-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .resume-section p {
+    font-size: 1.2em;
+    color: #5a5a5a; /* Neutral color for paragraph text */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+
+
+  /* Make sure the section background is transparent */
+.education-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: transparent; /* Remove the beige background covering the image */
+  }
+  
+  /* Update the content box background color to beige */
+  .education-box {
+    background-color: #ffe8d6; /* Set light beige color for the content box */
+    padding: 30px 20px;
+    border-radius: 10px; /* Keep the rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Maintain subtle shadow */
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Keep the existing styling for headings and text */
+  .education-box h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .education-box h3 {
+    font-size: 1.5em;
+    color: #c07245;
+    margin-top: 20px;
+  }
+  
+  .education-box p {
+    font-size: 1.2em;
+    color: #5a5a5a;
+    line-height: 1.6;
+  }
+  
+  .education-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education-box li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+  }
+  

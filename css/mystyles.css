@@ -1,0 +1,95 @@
+body{
+    font-family: 'Trebuchet MS';
+}
+.site-heading-lower{
+    font-family: 'Trebuchet MS';
+}
+.mb-3{
+    font-family: 'Trebuchet MS';
+}
+a{
+    font-family: 'Trebuchet MS';
+}
+#mainNav{
+    background-color: darkcyan;
+}
+
+
+
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: burlywood;
+    background-color: darkcyan;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-weight: bold;
+}
+.rizz{
+    display: block;
+    border: 2px solid lime;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+    font-family: chiller, papyrus;
+    font-weight: bolder;
+}
+.rizz:hover{
+    font-size: 500%;
+    color: coral;
+    border: 5px darkorchid dashed;
+}
+a:visited{
+    color: azure;
+}
+img{
+    border: 6px;
+    color: brown;
+    border: solid;
+}
+li:hover{
+    text-decoration: underline;
+    background-color: darkblue;
+}
+a:hover{
+    text-decoration: overline;
+}
+a{
+    color: burlywood;
+}
+.common{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+}
+.bottom{
+    bottom: 0px;
+    left: 0px;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+.top{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+.content{
+    top: 150px;
+    left: 0px;
+    right: 0px;
+}
+.nav{
+    position: relative;
+    float: right;
+}
+.list{
+    position: absolute;
+    bottom: 100px;
+}
